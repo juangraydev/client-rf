@@ -2,7 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+#root {
+  padding: 0px !important;
+  background: black !important;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Custom Ant Design dropdown menu styling */
+.custom-dropdown-menu {
+  background-color: #00000066 !important;
+  border: none !important;
+  backdrop-filter: blur(8px);
+}
+
+.custom-dropdown-menu .ant-dropdown-menu-item {
+  background-color: transparent !important;
+  color: white !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.custom-dropdown-menu .ant-dropdown-menu-item:hover {
+  background-color: #FBAA0F !important;
+  color: white !important;
+}
+
+.custom-dropdown-menu .ant-dropdown-menu-item a {
+  color: inherit !important;
+}
+
+.custom-dropdown-menu .ant-dropdown-menu-item:hover a {
+  color: white !important;
+}
+
+
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -15,11 +50,13 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  padding: 0px !important;
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
+  font-weight: 700;
+  color: white;
   text-decoration: inherit;
 }
 a:hover {
@@ -69,4 +106,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
