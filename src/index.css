@@ -11,28 +11,27 @@
 
 
 /* Custom Ant Design dropdown menu styling */
-.custom-dropdown-menu {
+.ant-dropdown .ant-dropdown-menu{
   background-color: #00000066 !important;
-  border: none !important;
   backdrop-filter: blur(8px);
 }
 
-.custom-dropdown-menu .ant-dropdown-menu-item {
+.ant-dropdown .ant-dropdown-menu-item {
   background-color: transparent !important;
   color: white !important;
   transition: all 0.2s ease-in-out;
 }
 
-.custom-dropdown-menu .ant-dropdown-menu-item:hover {
+.ant-dropdown .ant-dropdown-menu-item:hover {
   background-color: #FBAA0F !important;
   color: white !important;
 }
 
-.custom-dropdown-menu .ant-dropdown-menu-item a {
+.ant-dropdown .ant-dropdown-menu-item a {
   color: inherit !important;
 }
 
-.custom-dropdown-menu .ant-dropdown-menu-item:hover a {
+.ant-dropdown .ant-dropdown-menu-item:hover a {
   color: white !important;
 }
 

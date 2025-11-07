@@ -2,18 +2,20 @@ import { Dropdown, Button, Space } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
+
 
 export default function Header() {
   // ✅ Dropdown menu items
   const serverInfoMenu = {
     items: [
-      { key: "1", label: <a href="/rules">Server Rules</a> },
-      { key: "2", label: <a href="/drops">Drop List</a> },
-      { key: "3", label: <a href="/combination">Combination Guide</a> },
-      { key: "4", label: <a href="/updates">Update Logs</a> },
-      { key: "5", label: <a href="/pitboss">Pitboss Status</a> },
-      { key: "6", label: <a href="/tournament">Tournament</a> },
-      { key: "7", label: <a href="/leaderboard">Leaderboard</a> },
+      { key: "1", label: <Link to="/rules">Server Rules</Link> },
+      { key: "2", label: <Link to="/drops">Drop List</Link> },
+      { key: "3", label: <Link to="/combination">Combination Guide</Link> },
+      { key: "4", label: <Link to="/updates">Update Logs</Link> },
+      { key: "5", label: <Link to="/pitboss">Pitboss Status</Link> },
+      { key: "6", label: <Link to="/tournament">Tournament</Link> },
+      { key: "7", label: <Link to="/leaderboard">Leaderboard</Link> },
     ],
   };
 
@@ -22,8 +24,9 @@ export default function Header() {
       {/* LEFT SIDE */}
       <div className="flex items-center space-x-8">
         {/* Logo */}
-        <div
-          className="group flex flex-col text-center justify-center leading-[0.9] "
+        <Link
+          to="/"
+          className="group flex flex-col text-center justify-center leading-[0.9] mr-[30px] no-underline hover:no-underline"
         >
           <span className="!font-[800] !text-[#fff] text-[30px] transition-colors duration-300">
             RF ONLINE
@@ -31,10 +34,10 @@ export default function Header() {
           <span className="!text-[47px] !font-[800] !text-[#FBAA0F] transition-colors duration-300">
             NEXUS
           </span>
-        </div>
+        </Link>
 
         {/* Dropdown */}
-        <Dropdown menu={serverInfoMenu} trigger={["click"]}>
+        <Dropdown menu={serverInfoMenu} className="custom-dropdown-menu" trigger={["click"]}>
           <Button
             type="text"
             className="!text-[#fff] hover:!text-[#FBAA0F] text-[20px] font-[500] transition"
@@ -49,10 +52,9 @@ export default function Header() {
         {/* Download */}
         <Button
           type="text"
-          href="/download"
           className="!text-[#fff] hover:!text-[#FBAA0F] text-[20px] font-[500] transition"
         >
-          Download
+          <Link to="/download">Download</Link>
         </Button>
 
         {/* Donate */}
@@ -61,7 +63,7 @@ export default function Header() {
           href="/donate"
           className="!text-[#fff] hover:!text-[#FBAA0F] text-[20px] font-[500] transition"
         >
-          Donate
+          <Link to="/donate">Donate</Link>
         </Button>
       </div>
 

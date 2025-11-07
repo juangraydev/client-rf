@@ -8,21 +8,12 @@ import BackgroundVideo from "./components/BackgroundVideo";
 import CustomFooter from "./components/Footer";
 import CustomHeader from "./components/Header";
 
-
+import Error404 from './pages/404';
 import Home from "./pages/home"
 
 const {  Content } = Layout
 
-// function Dashboard() {
-//   return <div className="p-6">Dashboard Content</div>
-// }
-
-// function Profile() {
-//   return <div className="p-6">Profile Content</div>
-// }
-
 function App() {
-  // const [collapsed, setCollapsed] = useState(false)
 
   return (
     <div className="w-full h-full !bg-[#000] relative">
@@ -33,6 +24,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           {/* <Route path="/profile" element={<Profile />} /> */}
+
+          
+          <Route path="*" element={<Error404 />} />
         </Routes>
       </Content>
       <CustomFooter/>
