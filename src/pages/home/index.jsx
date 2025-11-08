@@ -1,9 +1,5 @@
-// "use client"
-
 import { Button } from "antd";
-
-// import Link from "next/link";
-
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -19,7 +15,7 @@ export default function Home() {
                 type="default"
                 className="!h-[64px] !w-[200px] !text-[20px] !bg-[#FBAA0F] !text-[#FFF] !font-[800] !rounded-[10px] !border-none hover:!bg-[#fff] hover:!text-[#FBAA0F] transition-all duration-300"
             >
-                DOWNLOAD NOW
+              <Link to="/download">DOWNLOAD NOW</Link>
             </Button>
         </div>
       </div>

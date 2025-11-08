@@ -1,0 +1,51 @@
+[
+    {
+        "rule": "Bug Abuse",
+        "description": "Includes item errors from race transfer, item duplication, and other exploitative bugs.",
+        "offense_1": "Warning",
+        "offense_2": "12-hour ban",
+        "offense_3": "30 days ban"
+    },
+    {
+        "rule": "Safezone Exploits",
+        "description": "Debuffing, healing, or trash-buffering inside safe zones.",
+        "offense_1": "Warning",
+        "offense_2": "12-hour ban",
+        "offense_3": "30 days ban"
+    },
+    {
+        "rule": "PVP Point and CPT Feeding",
+        "description": "Artificially boosting PVP points or CPT through arranged fights.",
+        "offense_1": "Warning",
+        "offense_2": "12-hour ban",
+        "offense_3": "30 days ban"
+    },
+    {
+        "rule": "Terrain Bug Abuse",
+        "description": "Exploiting map terrain glitches to gain unfair advantage.",
+        "offense_1": "Warning",
+        "offense_2": "12-hour ban",
+        "offense_3": "30 days ban"
+    },
+    {
+        "rule": "Third-Party Programs",
+        "description": "Use of unauthorized tools such as RF Helper, YOLO, GNTrainer, VMware. (RF Clicker is allowed).",
+        "offense_1": "Permanent ban (entire account)",
+        "offense_2": "N/A",
+        "offense_3": "N/A"
+    },
+    {
+        "rule": "Nuking Inside Core During HSK",
+        "description": "Using nukes in restricted HSK areas (Z area is NOT!! allowed).",
+        "offense_1": "Warning",
+        "offense_2": "12-hour ban",
+        "offense_3": "30 days ban"
+    },
+    {
+        "rule": "Respect the GM & Staff",
+        "description": "Players must show respect to Game Masters and staff. Harassment, insults, or disrespectful behavior will not be tolerated.",
+        "offense_1": "Warning",
+        "offense_2": "3-day ban",
+        "offense_3": "Permanent ban"
+    }
+]

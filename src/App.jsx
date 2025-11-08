@@ -10,6 +10,8 @@ import CustomHeader from "./components/Header";
 
 import Error404 from './pages/404';
 import Home from "./pages/home"
+import Download from "./pages/download"
+import Rules from "./pages/rules"
 
 const {  Content } = Layout
 
@@ -23,8 +25,8 @@ function App() {
       <Content className="m-4 p-6 bg-gray-100 rounded-lg">
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/profile" element={<Profile />} /> */}
-
+          <Route path="/download" element={<Download />} />
+          <Route path="/rules" element={<Rules />} />
           
           <Route path="*" element={<Error404 />} />
         </Routes>
